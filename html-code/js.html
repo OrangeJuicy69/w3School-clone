@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Web – JavaScript Basics</title>
+    <link rel="stylesheet" href=../css-style/style.css>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="logo">LearnWeb from Loris</div>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="./html.html">HTML</a>
+        <a href="./css.html">CSS</a>
+        <a href="./js.html">JavaScript</a>
+        <a href="./stuff.html">New stuff</a>
+    </nav>
+</header>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <h3>JavaScript Topics</h3>
+        <a href="#js-intro">Introduction</a>
+        <a href="#js-variables">Variables</a>
+        <a href="#js-functions">Functions</a>
+        <a href="#js-conditionals">Conditionals</a>
+        <a href="#js-events">Events</a>
+        <a href="#js-counters">Counters</a>
+        <a href="#js-dom">DOM Manipulation</a>
+    </aside>
+
+    <main class="content">
+    
+        <section id="js-intro">
+            <h1>JavaScript Introduction</h1>
+            <p>
+                JavaScript is a programming language that allows you to make websites interactive.
+                It is used to control behavior, handle user input, and dynamically update content.
+            </p>
+        </section>
+
+        <section id="js-variables">
+            <h2>Variables</h2>
+            <p>
+                Variables are used to store data that can be reused throughout your program.
+                In JavaScript, <code>let</code> is used for values that may change,
+                while <code>const</code> is used for values that should remain constant.
+            </p>
+            <pre><code>let age = 18;
+const name = "Loris";</code></pre>
+        </section>
+
+        <section id="js-functions">
+            <h2>Functions</h2>
+            <p>
+                Functions are reusable blocks of code that perform a specific task.
+                They help keep your code organized and reduce repetition.
+            </p>
+            <pre><code>function greet() {
+    alert("Hello World");
+}</code></pre>
+        </section>
+
+        <section id="js-conditionals">
+            <h2>Conditionals</h2>
+            <p>
+                Conditional statements allow your program to make decisions.
+                Code inside a condition only runs if the specified condition evaluates to true.
+            </p>
+            <pre><code>if (age >= 18) {
+    console.log("Adult");
+}</code></pre>
+        </section>
+
+        <section id="js-events">
+            <h2>Button Interaction (Events)</h2>
+            <p>
+                JavaScript can react to user actions such as clicks, keyboard input, or mouse movement.
+                These interactions are handled using events.
+            </p>
+            <button class="btn" onclick="sayHello()">Click me</button>
+        </section>
+
+        <section id="js-counters">
+            <h2>Counter Example</h2>
+            <p>
+                This example demonstrates how JavaScript updates values dynamically.
+                Each button click changes a variable and updates the displayed result instantly.
+            </p>
+            <button class="btn" onclick="decrease()">-</button>
+            <span id="counter">0</span>
+            <button class="btn" onclick="increase()">+</button>
+        </section>
+
+        <section id="js-dom">
+            <h2>DOM Manipulation</h2>
+            <p>
+                The DOM (Document Object Model) allows JavaScript to access and modify HTML elements.
+                This makes it possible to change text and content without reloading the page.
+            </p>
+            <p id="dom-text">This text will change.</p>
+            <button class="btn" onclick="changeText()">Change Text</button>
+        </section>
+
+    </main>
+<main class="content">
+
+        <section>
+            <h1>Advanced JavaScript</h1>
+            <p>
+                Advanced JavaScript focuses on asynchronous code, APIs, and real-world use cases.
+                These concepts are essential for modern web applications.
+            </p>
+        </section>
+
+        <!-- ASYNC -->
+        <section id="async">
+            <h2>Async & Await</h2>
+            <p>
+                JavaScript is asynchronous by default.
+                <code>async</code> and <code>await</code> allow you to write asynchronous code
+                that looks and behaves like synchronous code, making it easier to read and maintain.
+            </p>
+
+            <pre><code>async function loadData() {
+    const result = await fetchData();
+    console.log(result);
+}</code></pre>
+        </section>
+
+        <!-- FETCH -->
+        <section id="fetch">
+            <h2>Fetch API</h2>
+            <p>
+                The Fetch API allows JavaScript to communicate with servers.
+                It is commonly used to retrieve data from APIs such as user data, posts, or statistics.
+            </p>
+
+            <pre><code>fetch("https://api.example.com/data")
+    .then(response => response.json())
+    .then(data => console.log(data));</code></pre>
+        </section>
+
+        <!-- API DEMO -->
+        <section id="api">
+            <h2>Live API Example</h2>
+            <p>
+                This example fetches a random user from a public API and displays the result dynamically.
+                Click the button to load new data.
+            </p>
+
+            <button class="btn" onclick="loadUser()">Load Random User</button>
+
+            <div class="api-box">
+                <p><strong>Name:</strong> <span id="user-name">-</span></p>
+                <p><strong>Email:</strong> <span id="user-email">-</span></p>
+                <p><strong>Country:</strong> <span id="user-country">-</span></p>
+            </div>
+        </section>
+
+        <!-- ERROR -->
+        <section id="error">
+            <h2>Error Handling</h2>
+            <p>
+                Errors can occur during network requests or data processing.
+                Using <code>try...catch</code> ensures that your application does not crash
+                and provides proper feedback to the user.
+            </p>
+
+            <pre><code>try {
+    const response = await fetch(url);
+} catch (error) {
+    console.error("Something went wrong");
+}</code></pre>
+        </section>
+
+    </main>
+
+</div>
+</div>
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2026 Loris Widmer. Alle Rechte vorbehalten.</p>
+    <ul class="footer-links">
+      <li><a href="#">Impressum</a></li>
+      <li><a href="#">Datenschutz</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

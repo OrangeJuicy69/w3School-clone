@@ -1,0 +1,148 @@
+
+.flex-demo {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 1.5rem;
+    background: #6366f1;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.flex-item:hover {
+    transform: translateY(-5px);
+}
+
+
+.grid-demo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.grid-item {
+    background: #22c55e;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.responsive-box {
+    margin-top: 1rem;
+    padding: 2rem;
+    background: #0ea5e9;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .responsive-box {
+        background: #ef4444;
+    }
+}
+
+
+#dark-toggle {
+    display: none;
+}
+
+.dark-label {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#dark-toggle:checked ~ .layout {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+#dark-toggle:checked ~ .layout .sidebar {
+    background: #020617;
+}
+
+
+.project-card {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    max-width: 350px;
+    background: linear-gradient(135deg, #6366f1, #9333ea);
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    animation: fadeUp 0.8s ease;
+}
+
+.project-btn {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background: white;
+    color: #4f46e5;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.project-btn:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.site-footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.site-footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #ffa07a;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}

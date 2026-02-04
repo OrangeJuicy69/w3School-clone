@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Web – HTML & CSS Basics</title>
+    <link rel="stylesheet" href=/css-style/style.css>
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="logo">LearnWeb from Loris</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href=".//html-code/html.html">HTML</a>
+            <a href="./html-code/css.html">CSS</a>
+            <a href=".//html-code/js.html">JavaScript</a>
+            <a href=".//html-code/stuff.html">New stuff</a>
+        </nav>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>HTML Tutorial</h3>
+            <a href="#html-intro">HTML Introduction</a>
+            <a href="#html-structure">HTML Structure</a>
+            <a href="#html-elements">HTML Elements</a>
+            <a href="#html-attributes">HTML Attributes</a>
+            <a href="#html-headings">HTML Headings</a>
+            <a href="#html-paragraphs">HTML Paragraphs</a>
+
+            <h3>CSS Tutorial</h3>
+            <a href="#css-intro">CSS Introduction</a>
+            <a href="#css-selectors">CSS Selectors</a>
+            <a href="#css-colors">CSS Colors</a>
+            <a href="#css-boxmodel">CSS Box Model</a>
+        </aside>
+
+        <main class="content">
+
+
+            <section id="html-intro">
+                <h1>HTML Introduction</h1>
+                <p>
+                    HTML stands for <strong>Hyper Text Markup Language</strong>.
+                    It is the standard language used to create web pages.
+                </p>
+
+                <ul>
+                    <li>HTML describes the structure of a web page</li>
+                    <li>HTML consists of elements</li>
+                    <li>HTML elements tell the browser how to display content</li>
+                </ul>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+            </section>
+
+
+            <section id="html-structure">
+                <h1>HTML Structure</h1>
+                <p>
+                    Every HTML document has a basic structure.
+                </p>
+
+                <div class="example">
+                    <h4>Basic Structure</h4>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+            </section>
+
+
+            <section id="html-elements">
+                <h1>HTML Elements</h1>
+                <p>
+                    An HTML element usually consists of a start tag, content, and an end tag.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>&lt;p&gt;This is a paragraph&lt;/p&gt;
+&lt;a href="#"&gt;This is a link&lt;/a&gt;
+</code></pre>
+                </div>
+            </section>
+
+
+            <section id="html-attributes">
+                <h1>HTML Attributes</h1>
+                <p>
+                    Attributes provide additional information about HTML elements.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>&lt;img src="image.jpg" alt="My Image"&gt;
+&lt;a href=""&gt;Visit Example&lt;/a&gt;
+</code></pre>
+                </div>
+            </section>
+
+
+            <section id="html-headings">
+                <h1>HTML Headings</h1>
+                <p>
+                    HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+</code></pre>
+                </div>
+            </section>
+
+
+            <section id="html-paragraphs">
+                <h1>HTML Paragraphs</h1>
+                <p>
+                    The &lt;p&gt; tag defines a paragraph.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+</code></pre>
+                </div>
+            </section>
+
+
+            <section id="css-intro">
+                <h1>CSS Introduction</h1>
+                <p>
+                    CSS stands for <strong>Cascading Style Sheets</strong>.
+                    CSS is used to style HTML elements.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>p {
+    color: blue;
+    font-size: 18px;
+}
+</code></pre>
+                </div>
+            </section>
+
+
+            <section id="css-selectors">
+                <h1>CSS Selectors</h1>
+                <p>
+                    CSS selectors are used to select HTML elements you want to style.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>/* Element selector */
+p {
+    color: red;
+}
+
+/* Class selector */
+.box {
+    background: lightgray;
+}
+
+/* ID selector */
+#header {
+    height: 60px;
+}
+</code></pre>
+                </div>
+            </section>
+
+           
+            <section id="css-colors">
+                <h1>CSS Colors</h1>
+                <p>
+                    Colors in CSS can be set using names, HEX, RGB, or HSL.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>h1 {
+    color: #04aa6d;
+}
+
+p {
+    color: rgb(50, 50, 50);
+}
+</code></pre>
+                </div>
+            </section>
+
+            
+            <section id="css-boxmodel">
+                <h1>CSS Box Model</h1>
+                <p>
+                    The CSS box model consists of margins, borders, padding, and content.
+                </p>
+
+                <div class="example">
+                    <h4>Example</h4>
+                    <pre><code>.box {
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black;
+}
+</code></pre>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <div class="grid-pattern-dark"></div>
+</body>
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2026 Loris Widmer. Alle Rechte vorbehalten.</p>
+    <ul class="footer-links">
+      <li><a href="#">Impressum</a></li>
+      <li><a href="#">Datenschutz</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+</footer>
+
+
+
+</html>
